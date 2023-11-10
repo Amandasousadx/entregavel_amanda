@@ -1,0 +1,204 @@
+body
+{
+    margin: 0px;
+    background-color: gray;
+}
+
+/* LINHA ACIMA DO CABECARIO  */
+.cabecario_linha
+{
+    background-color:#117050;
+    height: 10px;
+}
+
+#container_cabecario
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+}
+
+/* LOGO DO SITE / IMAGEM, LADO ESQUERDO*/
+.cabecario_esquerda img
+{
+    width: 64px;
+    height: 64px;
+    margin-left: 105px;
+}
+
+/* LADO DIREITO ONDE TEMOS O INPUT E O MENU */
+.cabecario_direita
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa_cabecario
+{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+form input, form button
+{
+    border: none;
+    padding: 0px;
+    font-size: 15px;
+    align-items: start;
+}
+
+form input
+{
+    outline: 0;
+    width: 160px;
+    height: 11px;
+}
+
+button
+{
+    background-color: white;
+    cursor: pointer;
+}
+
+/* IMAGEM DA LUPA E DO MENU */
+button img
+{
+    width: 16px;
+    height: 16px;
+}
+
+.menu_cabecario
+{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.menu_cabecario img
+{
+    width: 24px;
+    height: 24px;
+    margin-right: 110px;
+}
+
+/* RESPONSIVIDADE DO SITE */
+
+/* PC / TABLET */
+@media (min-width: 700px) and (max-width:1120px)
+{
+    form 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* LOGO */
+    .cabecario_esquerda img 
+    {
+        margin-left: 70px;
+    }
+
+    /* IMAGEM MENU */
+    .menu_cabecario img 
+    {
+        width: 24px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    /* LOGO DO SITE*/
+    .cabecario_esquerda img
+    {
+        margin-left: 30px;
+    }
+
+    /* INPUT */
+    .pesquisa_cabecario
+    {
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 7px 30px;
+        height: 20px;
+    }
+
+    form input
+    {
+        width: 100px;
+        height: 12px;
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    /* IMAGEM DA LUPA */
+    button img 
+    {
+        height: 15px;
+        width: 15px;
+    }
+
+    /* IMAGEM DO MENU */
+    .menu_cabecario img 
+    {
+        margin-right: 30px;
+    }
+    
+    .menu_cabecario
+    {
+        margin-left: 20px;
+    }
+}
+
+/* CELULAR */
+
+@media ( max-width:370px)
+{
+    /* LOGO DO SITE*/
+    .cabecario_esquerda img
+    {
+        margin-left: 20px;
+    }
+
+    form input 
+    {
+        width: 50px;
+        height: 10px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .pesquisa_cabecario
+    {
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 8px 20px;
+        height: 20px;
+    }
+
+    /* IMAGEM DO MENU */
+    .menu_cabecario img   
+    {
+        margin-right: 50px;
+        height: 20px;
+        width: 22px;  
+    }
+        
+    .menu_cabecario
+    {
+        margin-left: 20px;
+    }
+
+}
